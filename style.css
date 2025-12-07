@@ -1,0 +1,69 @@
+
+    body {
+        margin: 0;
+        padding: 0;
+        /* ❌ FIX 1: Removed the invalid 'align-container: center;' */
+        font-family: 'Inter', sans-serif;
+
+        /* 🎨 Added a page background color for contrast */
+        background-color: #f4f4f9; 
+        
+        height: 100vh;
+        /* Flexbox for centering the .container */
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+    }
+
+    .container {
+        /* 🎨 FIX 2: Set the container background to white (as seen in your images) */
+        background: white; 
+        width: 90%;
+        max-width: 550px;
+        padding: 40px 35px;
+        border-radius: 18px;
+        
+        /* Ensures content inside the card is centered */
+        text-align: center; 
+        
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        margin: auto; 
+    }
+
+    h1 {
+        font-size: 32px;
+        font-weight: 700;
+        color: #333;
+        margin-bottom: 10px;
+        /* Optional: Added for visual style from the original image */
+        font-family: serif; 
+    }
+
+    p {
+        font-size: 16px;
+        color: #555;
+        line-height: 1.5;
+        margin-bottom: 30px;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 12px 30px;
+        background-color: #4f46e5;
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 600;
+        border-radius: 8px;
+        transition: 0.3s;
+    }
+
+    .btn:hover {
+        background-color: #3c35c9;
+    }
+
+    .footer {
+        margin-top: 25px;
+        font-size: 14px;
+        color: #777;
+    }
